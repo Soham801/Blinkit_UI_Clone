@@ -1,6 +1,4 @@
-# blinkit_ui
-
-A new Flutter project.
+# Blinkit UI CLone using Flutter
 
 ## Getting Started
 
