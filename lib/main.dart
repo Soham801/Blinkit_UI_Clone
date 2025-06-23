@@ -1,3 +1,4 @@
+import 'package:blinkit_ui/Screens/homescreen.dart';
 import 'package:blinkit_ui/Screens/loginscreen.dart';
 import 'package:blinkit_ui/Screens/splashscreen.dart';
 import 'package:flutter/material.dart';
@@ -14,9 +15,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        scaffoldBackgroundColor: Colors.black
+        scaffoldBackgroundColor: Colors.white
       ),
-      home: LoginScreen(),
+      home: HomeScreen(),
     );
   }
 }
