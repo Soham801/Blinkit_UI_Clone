@@ -65,19 +65,19 @@ class _HomeScreenState extends State<HomeScreen> {
                         child: Row(
                           children: [
                             Text(
-                              "HOME - ",
+                              "HOME -",
                               style: TextStyle(
                                 color: Colors.white,
-                                fontSize: 15,
+                                fontSize: 14,
                                 fontWeight: FontWeight.bold,
                                 fontFamily: 'Poppins',
                               ),
                             ),
                             Text(
-                              "Soham D, Aurangabad (MH)",
+                              "Soham D,Aurangabad(MH)",
                               style: TextStyle(
                                 color: Colors.white,
-                                fontSize: 15,
+                                fontSize: 14,
                                 fontFamily: 'Poppins',
                               ),
                             ),
@@ -89,7 +89,6 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     ],
                   ),
-                  SizedBox(width: 10),
                   Icon(
                     CupertinoIcons.profile_circled,
                     color: Colors.black,
@@ -108,6 +107,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: TextField(
                   controller: textEditingController,
                   decoration: InputDecoration(
+                    
                     hintText: "Search 'ice-cream' ",
                     border: InputBorder.none,
                     hintStyle: TextStyle(
@@ -119,8 +119,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     prefixIcon: Icon(Icons.search, color: Colors.black),
                     suffixIcon: Icon(Icons.mic),
                     suffixIconColor: Colors.black,
-                    disabledBorder: border,
-                    enabledBorder: border,
+                    
                   ),
                 ),
               ),

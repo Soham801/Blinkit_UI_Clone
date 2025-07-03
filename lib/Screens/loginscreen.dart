@@ -1,3 +1,4 @@
+import 'package:blinkit_ui/Screens/homescreen.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -34,10 +35,9 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
               ),
             ),
-
+          SizedBox(height: 10,),
             // Authentication Card
             Expanded(
-              
               child: Center(
                 child: Container(
                   color: Colors.white,
@@ -55,13 +55,15 @@ class _LoginScreenState extends State<LoginScreen> {
                           decoration: BoxDecoration(
                             image: DecorationImage(
                               fit: BoxFit.cover,
-                              image: AssetImage("assets/images/BlinkitLogo.png"),
+                              image: AssetImage(
+                                "assets/images/BlinkitLogo.png",
+                              ),
                             ),
                           ),
                         ),
-                
+
                         SizedBox(height: 15),
-                
+
                         Container(
                           child: Text(
                             "India's Last minute app",
@@ -78,75 +80,100 @@ class _LoginScreenState extends State<LoginScreen> {
                           children: [
                             Container(
                               width: 250,
-                
+
                               child: ListTile(
                                 title: Text(
                                   "Soham",
                                   textAlign: TextAlign.center,
-                                  style: TextStyle(fontSize: 20,fontFamily: 'Poppins',),
+                                  style: TextStyle(
+                                    fontSize: 20,
+                                    fontFamily: 'Poppins',
+                                  ),
                                 ),
                                 subtitle: Text(
                                   "9511XXXXXX",
                                   textAlign: TextAlign.center,
-                                  style: TextStyle(fontSize: 15,fontFamily: 'Poppins',),
-                                ),
-                              ),
-                            ),
-                
-                            Container(
-                              height: 60,
-                              width: 300,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(15),
-                                image: DecorationImage(
-                                  fit: BoxFit.cover,
-                                  image: AssetImage(
-                                    "assets/images/Rectangle 14.png",
+                                  style: TextStyle(
+                                    fontSize: 15,
+                                    fontFamily: 'Poppins',
                                   ),
                                 ),
                               ),
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Text(
-                                    "Login with",
-                                    style: TextStyle(
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.bold,
-                                      fontFamily: 'Poppins',
-                                      color: Colors.white,
+                            ),
+
+                            InkWell(
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => HomeScreen(),
+                                  ),
+                                );
+                              },
+                              child: Container(
+                                height: 60,
+                                width: 300,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(15),
+                                  image: DecorationImage(
+                                    fit: BoxFit.cover,
+                                    image: AssetImage(
+                                      "assets/images/Rectangle 14.png",
                                     ),
                                   ),
-                                  SizedBox(width: 9),
-                                  Image.asset(
-                                    "assets/images/zomatoIMG.png",
-                                    height: 19,
-                                    fit: BoxFit.contain,
-                                  ),
-                                ],
+                                ),
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    Text(
+                                      "Login with",
+                                      style: TextStyle(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.bold,
+                                        fontFamily: 'Poppins',
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                    SizedBox(width: 9),
+                                    Image.asset(
+                                      "assets/images/zomatoIMG.png",
+                                      height: 19,
+                                      fit: BoxFit.contain,
+                                    ),
+                                  ],
+                                ),
                               ),
                             ),
-                
+
                             SizedBox(height: 15),
-                
+
                             Container(
                               child: Text(
                                 "Access your saved addresses from Zomato automatically!",
-                                style: TextStyle(fontSize: 13,fontFamily: 'Poppins',),
+                                style: TextStyle(
+                                  fontSize: 13,
+                                  fontFamily: 'Poppins',
+                                ),
                               ),
                             ),
                             TextButton(
                               style: TextButton.styleFrom(
                                 backgroundColor: Colors.white,
                               ),
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => HomeScreen(),
+                                  ),
+                                );
+                              },
                               child: Text(
                                 "or login with phone number",
                                 style: TextStyle(color: Colors.green),
                               ),
                             ),
-                            SizedBox(height: 25),
                           ],
                         ),
                       ],

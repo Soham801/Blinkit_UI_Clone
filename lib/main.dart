@@ -1,3 +1,5 @@
+// ignore_for_file: unused_import
+
 import 'package:blinkit_ui/Screens/homescreen.dart';
 import 'package:blinkit_ui/Screens/loginscreen.dart';
 import 'package:blinkit_ui/Screens/splashscreen.dart';
@@ -17,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.white
       ),
-      home: HomeScreen(),
+      home: LoginScreen(),
     );
   }
 }
