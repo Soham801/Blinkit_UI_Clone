@@ -13,11 +13,6 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     final TextEditingController textEditingController = TextEditingController();
-    final border = OutlineInputBorder(
-      // Color(0XAARRGGBB)
-      borderSide: BorderSide(color: Colors.white),
-      borderRadius: BorderRadius.all(Radius.circular(8)),
-    );
     var w = MediaQuery.of(context).size.width;
     var h = MediaQuery.of(context).size.height;
     return Scaffold(
@@ -89,6 +84,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     ],
                   ),
+                  SizedBox(width: 15),
                   Icon(
                     CupertinoIcons.profile_circled,
                     color: Colors.black,
@@ -97,29 +93,34 @@ class _HomeScreenState extends State<HomeScreen> {
                 ],
               ),
               SizedBox(height: 25),
-              Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                  color: Colors.white,
-                ),
-                height: 50,
-                width: w * 0.9,
-                child: TextField(
-                  controller: textEditingController,
-                  decoration: InputDecoration(
-                    
-                    hintText: "Search 'ice-cream' ",
-                    border: InputBorder.none,
-                    hintStyle: TextStyle(
-                      color: Colors.black,
-                      fontFamily: 'Poppins',
+              Center(
+                child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(11),
+                    color: Colors.white,
+                  ),
+                  height: 50,
+                  width: w * 0.8,
+                  child: Center(
+                    child: TextField(
+                      controller: textEditingController,
+                      decoration: InputDecoration(
+                        
+                        hintText: "Search 'ice-cream' ",
+                        border: InputBorder.none,
+                        
+                        hintStyle: TextStyle(
+                          color: Colors.black,
+                          fontFamily: 'Poppins',
+                        ),
+                        filled: true,
+                        fillColor: Colors.white70,
+                        prefixIcon: Icon(Icons.search, color: Colors.black),
+                        suffixIcon: Icon(Icons.mic),
+                        suffixIconColor: Colors.black,
+                        
+                      ),
                     ),
-                    filled: true,
-                    fillColor: Colors.white70,
-                    prefixIcon: Icon(Icons.search, color: Colors.black),
-                    suffixIcon: Icon(Icons.mic),
-                    suffixIconColor: Colors.black,
-                    
                   ),
                 ),
               ),
