@@ -106,7 +106,6 @@ class _HomeScreenState extends State<HomeScreen> {
                     child: Center(
                       child: TextField(
                         controller: textEditingController,
-                        textAlign: TextAlign.center,
                         decoration: InputDecoration(
                           hintText: "Search 'ice-cream' ",
                           border: InputBorder.none,
