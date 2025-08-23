@@ -148,13 +148,12 @@ class _LoginScreenState extends State<LoginScreen> {
 
                             SizedBox(height: 15),
 
-                            Container(
-                              child: Text(
-                                "Access your saved addresses from Zomato automatically!",
-                                style: TextStyle(
-                                  fontSize: 13,
-                                  fontFamily: 'Poppins',
-                                ),
+                            Text(
+                              "Access your saved addresses from Zomato automatically!",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                fontSize: 12,
+                                fontFamily: 'Poppins',
                               ),
                             ),
                             TextButton(
