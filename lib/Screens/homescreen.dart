@@ -19,14 +19,14 @@ class _HomeScreenState extends State<HomeScreen> {
     var h = MediaQuery.of(context).size.height;
     return Scaffold(
       body: Container(
-        height: h * 0.4,
+        height: h * 0.6,
         width: w,
         decoration: BoxDecoration(color: Appcolors.homescreencolor),
         child: Padding(
           padding: const EdgeInsets.all(15),
           child: SafeArea(
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Row(
                   mainAxisAlignment: MainAxisAlignment.start,
@@ -35,7 +35,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.start,
-            
+
                       children: [
                         Container(
                           child: Text(
@@ -80,7 +80,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 ),
                               ),
                               SizedBox(width: 5),
-            
+
                               Icon(Icons.arrow_drop_down_rounded, size: 30),
                             ],
                           ),
@@ -92,7 +92,6 @@ class _HomeScreenState extends State<HomeScreen> {
                       CupertinoIcons.profile_circled,
                       color: Colors.black,
                       size: 40,
-                      
                     ),
                   ],
                 ),
@@ -117,23 +116,28 @@ class _HomeScreenState extends State<HomeScreen> {
                           ),
                           filled: true,
                           fillColor: Colors.white70,
-                          prefixIcon: Icon(Icons.search, color: Colors.black,size: 20,),
+                          prefixIcon: Icon(
+                            Icons.search,
+                            color: Colors.black,
+                            size: 20,
+                          ),
                           suffixIcon: Icon(Icons.mic),
                           suffixIconColor: Colors.black,
-                          
                         ),
                       ),
                     ),
                   ),
                 ),
-            
-                
+
                 SizedBox(height: 30),
-            
-            
+
                 // Divider line
-                Container(width: double.infinity, height: 1, color: Colors.white),
-            
+                Container(
+                  width: double.infinity,
+                  height: 1,
+                  color: Colors.white,
+                ),
+
                 Container(
                   child: Title(
                     color: Colors.white,
@@ -148,7 +152,53 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                 ),
-            
+                SizedBox(height: 15,),
+                Row(
+                  children: [
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Appcolors.cardcolor,
+                        borderRadius: BorderRadius.all(Radius.circular(10))
+                      ),
+                      height: 125,
+                      width: 100,
+                      child: Container(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Text(
+                              "Lights,Diyas & Candles",
+                              style: TextStyle(
+                                fontSize: 13
+                              ),
+                              ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    SizedBox(width: 15),
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Appcolors.cardcolor,
+                        borderRadius: BorderRadius.all(Radius.circular(10))
+                      ),
+                      height: 125,
+                      width: 100,
+                      child: Container(),
+                    ),
+                    SizedBox(width: 15),
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Appcolors.cardcolor,
+                        borderRadius: BorderRadius.all(Radius.circular(10))
+                      ),
+                      height: 125,
+                      width: 100,
+                      child: Container(),
+                    ),
+                  ],
+                ),
                 // Item Cards
               ],
             ),
