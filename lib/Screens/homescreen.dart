@@ -185,7 +185,20 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                       height: 125,
                       width: 100,
-                      child: Container(),
+                      child: Container(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Text(
+                              "Diwali Gifts",
+                              style: TextStyle(
+                                fontSize: 13
+                              ),
+                              ),
+                          ],
+                        ),
+                      ),
                     ),
                     SizedBox(width: 15),
                     Container(
@@ -195,7 +208,20 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                       height: 125,
                       width: 100,
-                      child: Container(),
+                      child: Container(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Text(
+                              "Appliances & Gadgets",
+                              style: TextStyle(
+                                fontSize: 13
+                              ),
+                              ),
+                          ],
+                        ),
+                      ),
                     ),
                   ],
                 ),
