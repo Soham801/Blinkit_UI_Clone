@@ -1,3 +1,5 @@
+// ignore_for_file: sized_box_for_whitespace, avoid_unnecessary_containers
+
 import 'package:blinkit_ui/Screens/homescreen.dart';
 import 'package:flutter/material.dart';
 
